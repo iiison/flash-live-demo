@@ -17,7 +17,7 @@ const HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
 const commonPlugins = [HTMLWebpackPluginConfig]
 const base = {
   entry : {
-    bundle : `${PATHS.lib}/Base.js`
+    bundle : `${PATHS.js}/Controller.js`
   },
   output: {
     path       : PATHS.build,
@@ -30,7 +30,11 @@ const base = {
         test    : /\.js$/,
         exclude : [/bundle\.js/],
         use     : 'babel-loader'
-      }
+      },
+      {
+        test    : /\.tpl$/,
+        use     : 'handlebars-loader'
+      },
     ]
   },
   resolve : {

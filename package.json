@@ -17,5 +17,11 @@
     "html-webpack-plugin": "^2.29.0",
     "webpack": "^3.0.0",
     "webpack-dev-server": "git+https://github.com/webpack/webpack-dev-server.git"
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "handlebars": "^4.0.10",
+    "handlebars-loader": "^1.5.0",
+    "page": "^1.7.1"
   }
 }
